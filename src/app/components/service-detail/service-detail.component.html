@@ -1,0 +1,36 @@
+<!-- <div class="log-container">
+  <div *ngFor="let log of logs$ | async" class="log-item">
+
+    <span class="time">{{ log.time }}</span>
+
+    <span
+      class="msg"
+      [ngClass]="{
+        'error-log': log.message.includes('Failed')
+      }"
+    >
+      {{ log.message }}
+    </span>
+
+  </div>
+</div> -->
+
+<h2>Log Stream</h2>
+<div class="log-container">
+  <div *ngFor="let log of logs$ | async" class="log-item">
+
+    <span class="time">{{ log.time }}</span>
+
+    <span 
+      class="msg"
+      [ngClass]="{
+        'text-green': log.message.includes('UP'),
+        'text-yellow': log.message.includes('WARNING'),
+        'text-red': log.message.includes('DOWN')
+      }"
+    >
+      {{ log.message }}
+    </span>
+
+  </div>
+</div>

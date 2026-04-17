@@ -1,0 +1,47 @@
+<div *ngIf="error">{{ error }}</div>
+
+<div class="grid">
+  <div *ngFor="let s of services$ | async"
+       class="card"
+       [ngClass]="s.status">
+
+    <h2>{{ s.name }}</h2>
+    <p>Version: {{ s.version }}</p>
+
+    <p>Status:
+      <b [style.color]="getColor(s.status)">
+        {{ s.status }}
+      </b>
+    </p>
+
+    <p>{{ s.lastHeartbeat }}</p>
+
+    <p *ngIf="s.error" class="error-text">
+    ⚠️ Service unavailable
+    </p>
+
+    <button [routerLink]="['/detail', s.id]">
+      View Logs
+    </button>
+  </div>
+</div>
+
+<!-- <div *ngFor="let s of services$ | async" class="card">
+
+  <h3>{{ s.name }}</h3>
+
+  <p>Version: {{ s.version }}</p>
+
+  <p [ngClass]="s.status">
+    Status: {{ s.status }}
+  </p>
+
+  <p>{{ s.lastHeartbeat }}</p>
+
+  <p *ngIf="s.error" class="error-text">
+    ⚠️ Service unavailable
+  </p>
+
+  <button [routerLink]="['/detail', s.id]">View Logs</button>
+
+</div> -->
