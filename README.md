@@ -146,6 +146,8 @@ Since this is a frontend-only project:
 
 1. Dashboard View
 
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/a8c34812-6975-4d3e-a60a-2e535bfe8fcc" />
+
 - Displays all services,
 
 - Status updates automatically,
