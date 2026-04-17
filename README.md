@@ -4,15 +4,22 @@ A real-time monitoring dashboard built with Angular to help engineers detect, an
 
 ## 🚀Features
 
- Live Service Monitoring (auto update every 15 seconds),
- Realtime Log Streaming (updates every 3 seconds),
- Status Indicators :
+- Live Service Monitoring (auto update every 15 seconds),
+ 
+- Realtime Log Streaming (updates every 3 seconds),
+
+- Status Indicators :
     🟢 UP
+  
     🟡 WARNING
-    🔴 DOWN.
- Error Handling & Resilience,
- Responsive UI,
- High-Glanceability Dashboard,
+
+    🔴 DOWN
+  
+- Error Handling & Resilience,
+  
+- Responsive UI,
+
+- High-Glanceability Dashboard.
 
 ## ⚙️Setup Guide
 
@@ -61,14 +68,113 @@ npm install
 
 ## 🧠The "Why" (Architecture & Design Decisions)
 
-For end-to-end (e2e) testing, run:
+1. Reactive Architecture (RxJS)
 
-```bash
-ng e2e
+This project uses RxJS to handle real-time data streams.
+
+``` bash
+interval(15000).pipe(startWith(0))
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Why?
 
-## Additional Resources
+- Enables automatic UI updates without refresh,
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- Handles async data efficiently,
+
+- Ideal for monitoring systems.
+
+2. Separation of Concerns
+
+The project is structured into:
+
+```Service Layer``` → ```handles data & logic```, and ```Component Layer``` → ```handles UI```.
+
+The result :
+
+Clean code, Easier maintenance, and Better scalability
+
+3. State Management (BehaviorSubject)
+
+``` bash
+private servicesSubject = new BehaviorSubject<any[]>([]);
+services$ = this.servicesSubject.asObservable();
+```
+
+Why?
+
+- Keeps data reactive,
+
+- UI updates automatically,
+
+- Prevents direct mutation.
+
+4. Error Resilience
+
+``` bash
+catchError(() => of(fallbackData))
+```
+
+Why?
+
+- Prevents app crashes,
+
+- Provides fallback UI,
+
+- Keeps system running.
+
+5. High-Glanceability UI
+
+Designed for quick monitoring:
+
+- Clear color indicators,
+
+- Card-based layout
+
+- Minimal text, maximum visibility
+
+6. Simulated Real-Time System
+
+Since this is a frontend-only project:
+
+- Data is generated using mock functions,
+
+- Logs are streamed using intervals
+
+## 📸Evidence
+
+1. Dashboard View
+
+- Displays all services,
+
+- Status updates automatically,
+
+- Color indicators active.
+
+2. Log Detail View
+
+- Real-time log updates
+
+- Message-based color highlighting:
+
+  🟢 UP
+
+  🟡 WARNING
+
+  🔴 DOWN
+
+3. Error State
+
+ - “Service unavailable”
+
+ - “Failed to load data”
+
+## 🧪Tech Stack
+
+- Angular 14+
+
+- RxJS
+
+- TypeScript
+
+- CSS
