@@ -4,7 +4,7 @@ A real-time monitoring dashboard built with Angular to help engineers detect, an
 
 ## Features
 
-🔄 Live Service Monitoring (auto अपडेट every 15 seconds),
+🔄 Live Service Monitoring (auto update every 15 seconds),
 📡 Realtime Log Streaming (updates every 3 seconds),
 🎨 Status Indicators :
     🟢 UP
