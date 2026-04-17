@@ -1,8 +1,8 @@
-# MonitoringDashboard
+# 📊MonitoringDashboard
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.7.
+A real-time monitoring dashboard built with Angular to help engineers detect, analyze, and respond to service issues quickly. Designed with high-glanceability, resilience, and real-time updates in mind. This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.7.
 
-## Development server
+## Features
 
 To start a local development server, run:
 
