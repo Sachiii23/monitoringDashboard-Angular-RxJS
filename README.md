@@ -9,6 +9,7 @@ A real-time monitoring dashboard built with Angular to help engineers detect, an
 - Realtime Log Streaming (updates every 3 seconds),
 
 - Status Indicators :
+
     🟢 UP
   
     🟡 WARNING
