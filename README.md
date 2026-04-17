@@ -4,13 +4,15 @@ A real-time monitoring dashboard built with Angular to help engineers detect, an
 
 ## Features
 
-To start a local development server, run:
-
-```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+🔄 Live Service Monitoring (auto अपडेट every 15 seconds)
+📡 Realtime Log Streaming (updates every 3 seconds)
+🎨 Status Indicators
+    🟢 UP
+    🟡 WARNING
+    🔴 DOWN
+⚠️ Error Handling & Resilience
+📱 Responsive UI
+⚡ High-Glanceability Dashboard
 
 ## Code scaffolding
 
