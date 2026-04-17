@@ -146,7 +146,7 @@ Since this is a frontend-only project:
 
 1. Dashboard View
 
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/a8c34812-6975-4d3e-a60a-2e535bfe8fcc" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/2159e60f-dbef-43a0-ba08-7de19b8f94d3" />
 
 - Displays all services,
 
@@ -155,6 +155,8 @@ Since this is a frontend-only project:
 - Color indicators active.
 
 2. Log Detail View
+
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/79633751-f180-420b-9789-a45bb2112fae" />
 
 - Real-time log updates
 
@@ -170,7 +172,11 @@ Since this is a frontend-only project:
 
  - “Service unavailable”
 
+  <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/80db4a58-6dce-409e-9f7b-8ba000589b94" />
+
  - “Failed to load data”
+
+  <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/9b6516be-3f9e-4dd6-a924-82b350ae34b7" />
 
 ## 🧪Tech Stack
 
