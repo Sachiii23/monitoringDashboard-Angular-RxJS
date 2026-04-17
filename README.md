@@ -2,51 +2,64 @@
 
 A real-time monitoring dashboard built with Angular to help engineers detect, analyze, and respond to service issues quickly. Designed with high-glanceability, resilience, and real-time updates in mind. This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.7.
 
-## Features
+## 🚀Features
 
-🔄 Live Service Monitoring (auto update every 15 seconds),
-📡 Realtime Log Streaming (updates every 3 seconds),
-🎨 Status Indicators :
+ Live Service Monitoring (auto update every 15 seconds),
+ Realtime Log Streaming (updates every 3 seconds),
+ Status Indicators :
     🟢 UP
     🟡 WARNING
     🔴 DOWN.
-⚠️ Error Handling & Resilience,
-📱 Responsive UI,
-⚡ High-Glanceability Dashboard,
+ Error Handling & Resilience,
+ Responsive UI,
+ High-Glanceability Dashboard,
 
-## Code scaffolding
+## ⚙️Setup Guide
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Follow these steps to run the project locally:
 
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+1. Clone the Repository
 
 ```bash
-ng generate --help
+git clone https://github.com/Sachiii23/monitoringDashboard-Angular-RxJS.git
+cd monitoring-dashboard
 ```
 
-## Building
-
-To build the project run:
+2. Install Dependencies
 
 ```bash
-ng build
+npm install
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+3. Run the Project
 
-## Running unit tests
+``` bash
+ng serve
+```
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+4. Open in Browser
 
 ```bash
-ng test
+http://localhost:4200
 ```
 
-## Running end-to-end tests
+## ⚠️Troubleshooting
+
+Angular CLI not found
+
+``` bash
+npm install -g @angular/cli
+```
+
+Dependency / Cache Issues
+
+``` bash
+rm -rf node_modules
+npm install
+```
+
+
+## 🧠The "Why" (Architecture & Design Decisions)
 
 For end-to-end (e2e) testing, run:
 
